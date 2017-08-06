@@ -79,8 +79,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    CodeLab 2
+
+                    CodeLab 2 {{$name}}
                 </div>
+
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>

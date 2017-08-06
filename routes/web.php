@@ -1,12 +1,20 @@
 <?php
 
 
+//Route::get('/', function () {
+//    return view('pages.home');
+//});
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','PagesController@getHome');
 
-Route::get('/about',function (){
-    $var = false;
-    return view('about',compact('var'));
+
+Route::get('/videos/{id?}/{number?}','PagesController@getVideo');
+
+
+
+
+Route::get('/about', function () {
+    $var = true;
+    $names = ["ALi","Sabri"];
+    return view('about', compact('var','names'));
 });
