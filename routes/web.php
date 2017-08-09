@@ -9,6 +9,8 @@ Route::get('/','PagesController@getHome');
 
 
 Route::get('/videos/{id?}/{number?}','PagesController@getVideo');
+Route::get('/signup','PagesController@getSignup');
+Route::post('/signup/request','PagesController@requestSignup');
 
 
 
